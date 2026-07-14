@@ -172,6 +172,7 @@
   .portrait{border-radius:24px;border:1px solid var(--glass-line);aspect-ratio:4/5;position:relative;overflow:hidden;transform-style:preserve-3d;will-change:transform;
     background:radial-gradient(500px 320px at 30% 15%,rgba(62,109,240,.30),transparent 60%),radial-gradient(400px 300px at 85% 90%,rgba(217,178,61,.20),transparent 60%),linear-gradient(160deg,#0D1735,#070D1F)}
   .portrait .inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;transform:translateZ(36px)}
+  .portrait .pface{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%}
   .portrait .mono{width:130px;height:130px;border-radius:32px;display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-size:44px;font-weight:800;color:#081020;
     background:conic-gradient(from 210deg,var(--gold-soft),var(--gold),#9a7a20,var(--gold));box-shadow:0 24px 60px rgba(217,178,61,.35)}
   .portrait .cap{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
@@ -415,10 +416,7 @@
     <h2 class="title reveal">Founder</h2>
     <div class="founder-grid founder">
       <div class="portrait tilt-deep reveal" id="portrait">
-        <div class="inner">
-          <div class="mono">DF</div>
-          <div class="cap">Dawayne Flemming, MBA</div>
-        </div>
+        <img class="pface" src="headshot.jpg" alt="Dawayne Flemming, MBA — Founder of Flemming Consulting Group" loading="lazy">
         <div class="float-chip fc1">MBA · Summa Cum Laude</div>
         <div class="float-chip fc2">2 Apps Shipped · Zero Outages</div>
       </div>
